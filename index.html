@@ -11,62 +11,61 @@
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>WoodCraft Furniture</h1>
-        <p>Premium Furniture for Your Home</p>
-    </header>
+<header>
+    <h1>WoodCraft Furniture</h1>
+    <p>Premium Furniture for Your Home and Office</p>
+    <div class="cart">
+        🛒 Cart: <span id="cart-count">0</span>
+    </div>
+</header>
 
-    <!-- Main Layout -->
-    <main>
+<main>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h2>Category</h2>
-            <ul>
-                <li>Sofa</li>
-                <li>Bed</li>
-                <li>Dining Table</li>
-                <li>Chair</li>
-                <li>Wardrobe</li>
-                <li>Office Furniture</li>
-            </ul>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Category</h2>
+        <ul>
+            <li>Sofa</li>
+            <li>Bed</li>
+            <li>Dining Table</li>
+            <li>Chair</li>
+            <li>Wardrobe</li>
+            <li>Office Furniture</li>
+        </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+        <h2>New Products</h2>
+
+        <div class="product-card">
+            <img src="Image/Sofa.jpeg" alt="Wooden Sofa">
+            <h3>Wooden Sofa</h3>
+            <p>Premium teak wood sofa</p>
+            <p class="price">₹25,000</p>
+            <button onclick="addToCart()">Add to Cart</button>
         </div>
 
-        <!-- Product Section -->
-        <div class="products">
-            <h2>New Products</h2>
-
-            <!-- Product Card 1 -->
-            <div class="product-card">
-                <img src="Image/Sofa.jpeg" alt="Wooden Sofa">
-                <h3>Wooden Sofa</h3>
-                <p>Premium teak wood sofa</p>
-                <p class="price">₹25,000</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <!-- Product Card 2 -->
-            <div class="product-card">
-                <img src="Image/Bed.jpeg" alt="King Size Bed">
-                <h3>King Size Bed</h3>
-                <p>Comfortable king size bed frame</p>
-                <p class="price">₹40,000</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <!-- Product Card 3 -->
-            <div class="product-card">
-                <img src="Image/Wardrobe.jpeg" alt="Wardrobe">
-                <h3>Wooden Wardrobe</h3>
-                <p>Spacious wooden wardrobe</p>
-                <p class="price">₹35,000</p>
-                <button>Add to Cart</button>
-            </div>
-
+        <div class="product-card">
+            <img src="Image/Bed.jpeg" alt="King Size Bed">
+            <h3>King Size Bed</h3>
+            <p>Comfortable king size bed frame</p>
+            <p class="price">₹40,000</p>
+            <button onclick="addToCart()">Add to Cart</button>
         </div>
 
-    </main>
+        <div class="product-card">
+            <img src="Image/Dining-table.jpeg" alt="Dining Table">
+            <h3>Dining Table</h3>
+            <p>6 seater wooden dining table</p>
+            <p class="price">₹35,000</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
 
+    </div>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
